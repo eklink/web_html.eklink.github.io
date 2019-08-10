@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS_Styles.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+    
+            <!-- Collect the nav links, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--left nav link-->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="Index.html">LATITUDE
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--Right nav link-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="Temp.html">Max Temperature</a>
+                            </li>
+                            <li>
+                                <a href="Humidity.html">Humidity</a>
+                            </li>
+                            <li>
+                                <a href="Cloud.html">Cloudiness</a>
+                            </li>
+                            <li>
+                                <a href="Wind.html">Wind Speed</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Comp.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="Data1.html">Data</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--Main Grid-->
+    <div class= "container">
+        <div class= "row">
+            <div class= "col-md-7">
+                <div class= "main-box">
+                <h1 class= "main-pg-header">Weather At The Equator</h1>
+                <hr>
+                <div class= "summary txt">
+                    <img id= "main-img" src= "https://i.cbc.ca/1.3756818.1558464528!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/lightning-storm-weather-electrical-ottawa-tulip-festival.jpg", alt= "weather">
+                    <p>
+                        "What's the weather like as we approach the equator?"
+
+                        Is it true the closer to the equator you are the warmer it is? 
+                        The following data is looking at weather measures by city location. 
+                        Analyze and determine if there is a correlation between weather and latitude. 
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class= "col-md-5">
+                <div class= "side-box">
+                <h2 class= "main-pg-subheader">Visualizations</h2>
+                <hr>
+                <div class= "sidebar">
+                    <a href= "Temp.html"><img id= "side-img1" src= "https://github.com/eklink/Web_HTML/blob/master/temp_cities.png?raw=true", alt= "Temp vs. Latitude Scatterplt"></a>
+                    <a href= "Humidity.html"><img id= "side-img2" src= "https://github.com/eklink/Web_HTML/blob/master/humd_cities.png?raw=true", alt= "Humidity vs. Latitude Scatterplt"></a>
+                    <a href= "Cloud.html"><img id= "side-img3" src= "https://github.com/eklink/Web_HTML/blob/master/cloud_cities.png?raw=true", alt= "Cloudiness vs. Latitude Scatterplt"></a>
+                    <a href= "Wind.html"><img id= "side-img4" src= "https://github.com/eklink/Web_HTML/blob/master/wind_cities.png?raw=true", alt= "Wind Speed vs. Latitude Scatterplt"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class= "container-fluid bottom-footer page-footer">
+        <div class= "row">
+            <div class= "col text-center"
+            <p id= "footer-txt">
+                &copy; Copyright Coding Bootcamp 2019
+            </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
